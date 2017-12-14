@@ -1,0 +1,8 @@
+/*Header Modifications*/
+.header-fix, .header-content {
+  text-align: center;
+}
+
+.header-content {
+  font-size: 20px;
+}
