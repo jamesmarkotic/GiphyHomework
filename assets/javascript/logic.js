@@ -31,20 +31,19 @@ function animalsDisp() {
           }
         });
 
-//Just Haven't gotten animate of gif to work
-        // $("img").on("click", function() {
-        //       alert('In click!')
-        //       var state = $(this).attr("data-state");
-        //       if (state === "still") {
-        //         $(this).attr("src", $(this).attr("data-animate"));
-        //         $(this).attr("data-state", "animate");
-        //       } else {
-        //         $(this).attr("src", $(this).attr("data-still"));
-        //         $(this).attr("data-state", "still");
-        //       }
-        // });
-    };
+// Just Haven't gotten animate of gif to work
 
+    };
+$(document).on("click", "img", function() {
+      var state = $(this).attr("data-state");
+      if (state === "still") {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-state", "animate");
+      } else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-state", "still");
+      }
+});
 
 function Animals() {
         $("#buttonDiv").empty();
